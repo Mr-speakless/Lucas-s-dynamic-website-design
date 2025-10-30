@@ -1,0 +1,12 @@
+h3 {
+    color: blue;
+}
+
+#greenParagraph{
+    color:aqua;
+}
+
+.classTag{
+    stroke-width: 1px;
+    border: 1px solid blue;
+}
