@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action: Specifies the URL where the form's data should be sent upon submission. -->
+    <!-- Specifies the HTTP method used to submit the form data to the URL defined in the action attribute. -->
+    <form action="/uploadSketch", method="post">
+        <!-- Defines a descriptive caption for a form control. -->
+        <!-- for: Links this label text to the corresponding input element using the input's ID. -->
+        <label for="capsule_Text">Type here to put your text in to time capsule: </label>
+        <!-- Crucial Attribute: Provides the key or parameter name for the data submitted to the server. -->
+        <input type="textarea" id="capsule_Text" name="capsule_Text">
+        <br>
+        <label for="Timer">Set your time capsule time:</label>
+        <!-- setting the time -->
+        <input type="datetime-local" id="Timer" name="releaseTime" required>
+        <br>
+        <!-- Defines the button that triggers the form's submission process. -->
+        <input type="submit" value="Seal the Capsule">
+    </form>
+</body>
+</html>
