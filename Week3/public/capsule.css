@@ -1,0 +1,32 @@
+.capsule-entry{
+    /* FIX: Add the 'solid' style to make the border visible */
+    border: 10px solid rgb(158, 109, 205); 
+    border-radius: 30px;
+    background-color: rgb(67, 0, 130);
+    padding: 0px 30px; /* Add padding for better visual spacing */
+    margin: 10px;
+}
+
+.message-unsealed{
+    font-size: 28px; /* Use 'large' or pixels for size */
+    font-weight: bolder;
+    color: rgb(255, 251, 0);
+}
+
+.timestamp{
+    font-size: 14px; /* Use 'large' or pixels for size */
+    font-weight: bolder;
+    color: aliceblue;
+}
+.message-sealed{
+    font-size: 14px; /* Use 'large' or pixels for size */
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+h2,h1{
+    color: aliceblue;
+}
+body{
+    background-color: rgb(69, 69, 180);
+}

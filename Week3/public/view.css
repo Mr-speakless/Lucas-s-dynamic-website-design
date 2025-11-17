@@ -1,0 +1,18 @@
+.capsule-entry{
+    /* FIX: Add the 'solid' style to make the border visible */
+    border: 10px solid rgb(158, 109, 205); 
+    border-radius: 30px;
+    background-color: rgb(67, 0, 130);
+    padding: 0px 30px; /* Add padding for better visual spacing */
+    margin: 10px;
+}
+
+p{
+    font-size: 14px; /* Use 'large' or pixels for size */
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.view-body{
+    background-color: rgb(235, 215, 254);
+}

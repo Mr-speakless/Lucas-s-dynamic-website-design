@@ -1,0 +1,13 @@
+#sketchGalleryDiv{
+    width: 800px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+/* capsule.css */
+

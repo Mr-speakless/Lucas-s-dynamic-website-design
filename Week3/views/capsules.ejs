@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Capsules</title>
+    <link rel="stylesheet" type="text/css" href="/capsule.css">
+</head>
+<body>
+    <h1>Time Capsules</h1>
+    <p><a href="/upload.html">Create a new capsule!</a></p>
+
+    <% capsules.forEach(function(capsule) { %>
+        <div class="capsule-entry">
+            
+            <% if (capsule.isReady) { %>
+                <h2>🎉 UNSEALED CAPSULE! 🎉</h2>
+                
+                <form action="/view" method="POST" class="unlock-form">
+                    <input type="hidden" name="id" value="<%= capsule.id %>">
+                    
+                    <label for="code-<%= capsule.id %>">Enter the code:</label>
+                    <input type="text" id="code-<%= capsule.id %>" name="code" placeholder="----" required maxlength="4">
+                    <button type="submit">Unlock</button>
+                </form>
+
+            <% } else { %>
+                <h2>⏳ Time Capsule Sealed 🔒</h2>
+                <p class="message-sealed">
+                    The capsule will be released at: <%= capsule.releaseTime.toLocaleString() %> 
+                </p>
+            <% } %>
+
+        </div>
+    <% }); %>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capsule Contents</title>
+    <link rel="stylesheet" type="text/css" href="/view.css">
+</head>
+<body class = 'view-body'>
+    
+    <% if (success) { %>
+        <h1>🎉 The capsule was unlocked! 🎉</h1>
+        <div class="capsule-entry unsealed">
+            <p class="message-unsealed"><b>The massage from the past:</b></p>
+            <p class="message-unsealed"><%= message %></p>
+            <hr>
+            <p class="timestamp">The massage comes from: <%= releaseTime %></p>
+        </div>
+
+    <% } else { %>
+        <h1>😞 The access was declined 😞</h1>
+        <div class="capsule-entry">
+            <p class="message-sealed">Wrong Code!</p>
+        </div>
+    <% } %>
+
+    <br>
+    <a href="/capsules">Back to the Capsules</a>
+
+</body>
+</html>
